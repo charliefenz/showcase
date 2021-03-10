@@ -8,7 +8,34 @@
     <title>Charliefenz's Dynamic Showcase</title>
 </head>
 <body>
-    
+    <header>
+        <h1>La alacena</h1>
+        <div id="generador">
+            <label for="items">Introduce el item</label>
+            <select name="items" id="items">
+                <option value="manzana">Manzana</option>
+                <option value="banana">Banana</option>
+                <option value="cereza">Cereza</option>
+                <option value="tomate">Tomate</option>
+                <option value="cebolla">Cebolla</option>
+            </select>
+            <label for="nro">Introduce la cantidad</label>
+            <input type="text" id="nro">
+            <button id="generar">Añadir</button>
+            <button id="limpiar">Limpiar</button>
+        </div>
+    </header>
+    <main>
+        <div id="contenedor">
+            <h2>Elige el producto que quieras</h2>
+            <div id="mostrador">
+                <div class="baldas"></div>
+            </div>
+        </div>
+        <div id="ticket">
+            <h2>Carrito de la compra</h2>
+        </div>
+    </main>
     <script src="Scripts/script.js"></script>
 </body>
 </html>
