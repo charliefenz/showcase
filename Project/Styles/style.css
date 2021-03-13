@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+header > .row {
+    background-color:rgb(27, 99, 146);
+    color: white;
+    padding: 10px 0;
+}
+
+#shopping-cart-area{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 30px 10px 10px;
+}
+
+#shopping-cart {
+    width: 10%;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        text-align: center;
+    }
+    #shopping-cart-area {
+        justify-content: center;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 281px) {
+    #shopping-cart {
+        width: 20%;
+    }
+}    
+
+
+main h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#showcase-layout {
+    background-color: rgb(235, 102, 26);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.items {
+    background-color: brown;
+    margin: 10px 0;
+}
+
+#ticket > span {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#bill {
+    border-top: 1px solid rgb(88, 86, 86);
+    margin-top: 20px;
+}
+
+#ticket-title {
+    background-color: rgb(228, 228, 228);
+    margin-bottom: 20px;
+}

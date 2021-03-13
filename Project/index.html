@@ -4,38 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="Styles/style.css" type="text/css">
     <title>Charliefenz's Dynamic Showcase</title>
 </head>
 <body>
-    <header>
-        <h1>La alacena</h1>
-        <div id="generador">
-            <label for="items">Introduce el item</label>
-            <select name="items" id="items">
-                <option value="manzana">Manzana</option>
-                <option value="banana">Banana</option>
-                <option value="cereza">Cereza</option>
-                <option value="tomate">Tomate</option>
-                <option value="cebolla">Cebolla</option>
-            </select>
-            <label for="nro">Introduce la cantidad</label>
-            <input type="text" id="nro">
-            <button id="generar">Añadir</button>
-            <button id="limpiar">Limpiar</button>
-        </div>
-    </header>
-    <main>
-        <div id="contenedor">
-            <h2>Elige el producto que quieras</h2>
-            <div id="mostrador">
-                <div class="baldas"></div>
+    <header class="container-fluid">
+        <div class="row">
+            <h1 class="col-12 col-md-4 align-self-center">La alacena</h1>
+            <div id="shopping-cart-area" class="col-12 col-md">    
+                <img src="Images/shopping-cart-md.png" alt="Shopping cart" id="shopping-cart">
             </div>
         </div>
-        <div id="ticket">
-            <h2>Carrito de la compra</h2>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+            <div id="showcase" class="col-12 col-md-7">
+                <h2>Elige el producto que quieras</h2>
+                <div id="showcase-layout" class="col-10 container">
+                    <div class="baldas row" id="balda1">
+                        <div id="it11" class="items col-3">
+                            <img src="Images/apple.png" alt="apple" width="100%" height="100%">
+                        </div>
+                        <div id="it12" class="items col-3">
+                            <img src="Images/apple.png" alt="apple">
+                        </div>
+                        <div id="it13" class="items col-3">
+                            <img src="Images/apple.png" alt="apple">
+                        </div>
+                        <div id="it14" class="items col-3">
+                            <img src="Images/cherries.png" alt="cherries">
+                        </div>
+                    </div>
+                    <div class="baldas row" id="balda2">
+                        <div id="it21" class="items col-3">
+                            <img src="Images/bananas.png" alt="banana">
+                        </div>
+                        <div id="it22" class="items col-3">
+                            <img src="Images/bananas.png" alt="banana">
+                        </div>
+                        <div id="it23" class="items col-3">
+                            <img src="Images/apple.png" alt="apple">
+                        </div>
+                        <div id="it24" class="items col-3">
+                            <img src="Images/tomato.png" alt="tomato">
+                        </div>
+                    </div>
+                    <div class="baldas row" id="balda3">
+                        <div id="it31" class="items col-3">
+                            <img src="Images/tomato.png" alt="tomato">
+                        </div>
+                        <div id="it22" class="items col-3">
+                            <img src="Images/onion.png" alt="onion">
+                        </div>
+                        <div id="it33" class="items col-3">
+                            <img src="Images/onion.png" alt="onion">
+                        </div>
+                        <div id="it34" class="items col-3">
+                            <img src="Images/onion.png" alt="onion">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ticket" class="col-12 col-md-5">
+                <h2>Carrito de la compra</h2>
+                <div id="bill" class="col-10 container">
+                    <div id="ticket-title" class="row">
+                        <div class="col">Artículo</div>
+                        <div class="col">Unidades</div>
+                    </div>
+                    <div class="bill-items row">
+                        <div class="col">Artículo</div>
+                        <div class="col">Unidades</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="Scripts/script.js"></script>
 </body>
 </html>
