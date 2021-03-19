@@ -98,3 +98,10 @@ main h2 {
     background-color: rgb(228, 228, 228);
     margin-bottom: 20px;
 }
+
+#ticket-total {
+    background-color: lightblue;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: end;
+}
