@@ -48,6 +48,16 @@ const printArticles = id => {
     }
 }
 
+//Función que imprime el número de drag&drops exitosos
+const printGeneralCount = count => {
+    document.getElementById("notifier").innerHTML = `
+    <div class="circle">
+        <div class="circle-text">${count}</div>
+    </div>
+    `
+}
+
+
 //Función que inserta HTML específico
 const printHTML = (article, amount) => {
     return `<div class="bill-items row">
@@ -63,13 +73,5 @@ const appendHTML = (target, article, amount) => {
     target.lastChild.innerHTML = `
         <div class="col">${article}</div>
         <div class="col">${amount}</div>
-    `
-}
-
-const printGeneralCount = count => {
-    document.getElementById("notifier").innerHTML = `
-    <div class="circle">
-        <div class="circle-text">${count}</div>
-    </div>
     `
 }
