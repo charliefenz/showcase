@@ -14,7 +14,7 @@ Una imagen de carrito de la compra que sirve como droparea y notifica cuántos i
 Listado de artículos y unidades que se van agregando.
 
 ## JS
-* Secuencia de funciones dra&drop creada según standarsd [w3schools]{https://www.w3schools.com/html/html5_draganddrop.asp}
+* Secuencia de funciones dra&drop creada según standard [w3schools](https://www.w3schools.com/html/html5_draganddrop.asp)
 
 * Funciones generales para relizar la impresión:
 1. printArticles
