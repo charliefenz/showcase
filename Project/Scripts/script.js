@@ -19,16 +19,40 @@ var count = 0;
     }
 
 const printArticles = id => {
-    let art = document.getElementById(id).getAttribute("alt");
+    let newArt = document.getElementById(id).getAttribute("alt");
     let target = document.getElementById("ticket-content");
-    
-    //desarrollar el contador que se imprime
-    target.innerHTML += `
-    <div class="bill-items row">
-        <div class="col">${art}</div>
-        <div class="col">Unidades</div>
-    </div>
-    `
+    let lines = target.children;
+    let units = 1;
+
+    if(lines.length == 0) {
+        target.innerHTML += `
+        <div class="bill-items row">
+            <div class="col">${newArt}</div>
+            <div class="col">${units}</div>
+        </div>
+        `
+    } else {
+        let found = false;
+
+        for (const line of lines) {
+           let art = line.children[0].innerHTML;
+
+           if (art == newArt) {
+                let num = Number(line.children[1].innerHTML);
+                num++;
+                line.children[1].innerHTML = num;
+                found = true;
+           }
+        }
+        if(found == false) {
+            target.appendChild(document.createElement("div"));
+                target.lastChild.setAttribute("class", "bill-items row");
+                target.lastChild.innerHTML = `
+                    <div class="col">${newArt}</div>
+                    <div class="col">${units}</div>
+               `
+        }
+    }
 }
 
 const printGeneralCount = count => {
